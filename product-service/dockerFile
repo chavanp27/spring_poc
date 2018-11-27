@@ -1,0 +1,6 @@
+FROM openjdk:8-jdk-alphine
+VOLUMNE /tmp
+COPY build/libs/*.jar
+app.jar
+ENTRYPOINT ["java","-Djava.security.egd]
+EXPOSE 9090
